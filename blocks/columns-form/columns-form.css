@@ -1,0 +1,81 @@
+
+.columns-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.columns-form .left-container {
+  width: 60%;
+  padding-right: 20px;
+}
+
+.columns-form .right-container {
+  width: 35%;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.columns-form .right-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-form .form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.columns-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.columns-form .form-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.columns-form .form-group input,
+.columns-form .form-group select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.columns-form .required {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.columns-form .get-report-button {
+  background-color: #035fe6;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.columns-form .get-report-button:hover {
+  background-color: #136ff6;
+}
+
+.columns-form h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.columns-form p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}

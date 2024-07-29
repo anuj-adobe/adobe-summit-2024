@@ -1,41 +1,42 @@
 
 export default function decorate(block) {
-  // Add a class to the block for styling
+  // Add class to the block
   block.classList.add('columns-recommendation');
 
-  // Get all child div elements
+  // Get all child divs inside the block
   const items = block.querySelectorAll(':scope > div > div');
-
   items.forEach((item) => {
-    // Add a class to each item for styling
+    // Add a class to each item
     item.classList.add('recommendation-item');
 
-    // Add a class to the picture element
-    const picture = item.querySelector('picture');
-    if (picture) {
-      picture.classList.add('recommendation-image');
-    }
-
-    // Add a class to the h3 element
-    const heading = item.querySelector('h3');
-    if (heading) {
-      heading.classList.add('recommendation-title');
-    }
-
-    // Add a class to the paragraph elements
-    const paragraphs = item.querySelectorAll('p');
-    paragraphs.forEach((paragraph, index) => {
-      if (index === 0) {
-        paragraph.classList.add('recommendation-description');
-      } else if (index === 1) {
-        paragraph.classList.add('recommendation-link-container');
+    // Move the image to be a background of the heading
+    const img = item.querySelector('img');
+    if (img) {
+      const title = item.querySelector('h3');
+      if (title) {
+        title.style.backgroundImage = `url(${img.src})`;
+        title.style.backgroundSize = 'cover';
+        title.style.backgroundPosition = 'center';
+        img.remove();
       }
-    });
-
-    // Add a class to the link element
-    const link = item.querySelector('a');
-    if (link) {
-      link.classList.add('recommendation-link');
     }
+  });
+
+  // Get all h3 elements and add a class
+  const titles = block.querySelectorAll('h3');
+  titles.forEach((title) => {
+    title.classList.add('recommendation-title');
+  });
+
+  // Get all p elements and add a class
+  const paragraphs = block.querySelectorAll('p');
+  paragraphs.forEach((paragraph) => {
+    paragraph.classList.add('recommendation-paragraph');
+  });
+
+  // Get all a elements and add a class
+  const links = block.querySelectorAll('a');
+  links.forEach((link) => {
+    link.classList.add('recommendation-link');
   });
 }

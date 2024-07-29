@@ -1,0 +1,66 @@
+
+.columns-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #3b0764, #9a1995, #c22047, #f1a01f);
+  padding: 40px;
+  color: white;
+}
+
+.columns-hero .left-column {
+  flex: 1;
+  max-width: 50%;
+}
+
+.columns-hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.columns-hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.columns-hero a {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.columns-hero a:hover {
+  background-color: #e6e6e6;
+}
+
+.columns-hero .right-column {
+  flex: 1;
+  max-width: 45%;
+}
+
+.columns-hero .right-column a {
+  display: block;
+  position: relative;
+}
+
+.columns-hero .right-column a::before {
+  content: '▶';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  pointer-events: none;
+}
+
+.columns-hero img {
+  width: 100%;
+  border-radius: 10px;
+}

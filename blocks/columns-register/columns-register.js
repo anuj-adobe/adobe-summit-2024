@@ -1,32 +1,28 @@
 
 export default function decorate(block) {
-  // Add class to the block for styling
-  block.classList.add('columns-register');
+  // Create a wrapper div for the text content
+  const textWrapper = document.createElement('div');
+  textWrapper.classList.add('text-wrapper');
 
-  // Extract the inner divs
-  const innerDivs = block.querySelectorAll(':scope > div > div');
-  
-  // Add classes for styling
-  if (innerDivs.length > 0) {
-    innerDivs[0].classList.add('text-content');
-    innerDivs[1].classList.add('image-content');
-  }
-  
-  // Add a class to the h1
+  // Move the h1 and paragraphs into the text wrapper
   const heading = block.querySelector('h1');
-  if (heading) {
-    heading.classList.add('heading');
-  }
-
-  // Add a class to the first paragraph
   const paragraphs = block.querySelectorAll('p');
-  if (paragraphs.length > 0) {
-    paragraphs[0].classList.add('description');
-  }
+  textWrapper.appendChild(heading);
+  paragraphs.forEach(p => textWrapper.appendChild(p));
 
-  // Add a class to the link
-  const link = block.querySelector('a');
-  if (link) {
-    link.classList.add('register-link');
-  }
+  // Create a wrapper div for the image content
+  const imageWrapper = document.createElement('div');
+  imageWrapper.classList.add('image-wrapper');
+
+  // Move the picture element into the image wrapper
+  const picture = block.querySelector('picture');
+  imageWrapper.appendChild(picture);
+
+  // Append the wrappers to the block
+  block.appendChild(textWrapper);
+  block.appendChild(imageWrapper);
+
+  // Add a class to the register link
+  const registerLink = block.querySelector('a');
+  registerLink.classList.add('register-link');
 }

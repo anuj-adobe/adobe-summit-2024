@@ -1,72 +1,60 @@
 
 .columns-recommendation {
   display: flex;
-  justify-content: space-between;
-  margin: 20px;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
 }
 
 .columns-recommendation .recommendation-item {
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
   border-radius: 10px;
-  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex: 1;
-  margin: 0 10px;
+  padding: 20px;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
-}
-
-.columns-recommendation .recommendation-item:first-child {
-  background: linear-gradient(to bottom, #4c1d95, #9f1239);
-}
-
-.columns-recommendation .recommendation-item:nth-child(2) {
-  background: linear-gradient(to bottom, #7e22ce, #db2777);
-}
-
-.columns-recommendation .recommendation-item:last-child {
-  background: linear-gradient(to bottom, #9333ea, #e11d48);
-}
-
-.columns-recommendation .recommendation-image img {
-  width: 100%;
-  height: auto;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  align-items: center;
+  text-align: center;
 }
 
 .columns-recommendation .recommendation-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: white;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.columns-recommendation .recommendation-description {
-  font-size: 1em;
-  color: white;
-  flex-grow: 1;
-}
-
-.columns-recommendation .recommendation-link-container {
+  width: 100%;
+  height: 200px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  font-size: var(--heading-font-size-l);
+  color: white;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+.columns-recommendation .recommendation-paragraph {
+  font-size: var(--body-font-size-s);
+  color: #666;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .columns-recommendation .recommendation-link {
   display: inline-block;
-  background-color: white;
-  color: #000;
   padding: 10px 20px;
-  border-radius: 25px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 30px;
+  font-size: var(--body-font-size-xs);
+  color: black;
+  text-align: center;
   text-decoration: none;
-  font-size: 1em;
   margin-top: 20px;
-  font-weight: bold;
-  border: 2px solid #000;
 }
 
 .columns-recommendation .recommendation-link:hover {
-  background-color: #f0f0f0;
+  background-color: #eee;
 }

@@ -5,6 +5,17 @@
     "sections": [
       {
         "id": "1-1",
+        "blocks": [],
+        "settings": {}
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "path": "/adobe-summit-2024-account",
+    "sections": [
+      {
+        "id": "2-1",
         "blocks": [
           {
             "id": "box-id-315728138",
@@ -20,19 +31,32 @@
             "color": "rgba(148, 0, 211, 0.3)",
             "mapping": "defaultContent",
             "customBlockName": ""
-          }
-        ],
-        "settings": {}
-      }
-    ]
-  },
-  {
-    "id": "2",
-    "path": "/adobe-summit-2024-account",
-    "sections": [
-      {
-        "id": "2-1",
-        "blocks": [
+          },
+          {
+            "id": "box-id-315728200",
+            "x": 94,
+            "y": 97,
+            "width": 1140,
+            "height": 619,
+            "xpath": "/html[1]/body[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]",
+            "layout": {
+              "numCols": 2,
+              "numRows": 1
+            },
+            "childrenXpaths": [
+              {
+                "xpath": "/html[1]/body[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]",
+                "xpathWithDetails": "id(\"heroCopy\")"
+              },
+              {
+                "xpath": "/html[1]/body[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]",
+                "xpathWithDetails": "id(\"col_form\")"
+              }
+            ],
+            "color": "rgba(148, 0, 211, 0.3)",
+            "mapping": "columns",
+            "customBlockName": "columns-hero"
+          },
           {
             "id": "box-id-635931609",
             "x": 106,

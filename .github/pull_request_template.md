@@ -3,5 +3,5 @@ Please always provide the [GitHub issue(s)](../issues) your PR is for, as well a
 Fix #<gh-issue-id>
 
 Test URLs:
-- Before: https://main--{repo}--{owner}.hlx.live/
-- After: https://<branch>--{repo}--{owner}.hlx.live/
+- Before: https://main--adobe-summit-2024--anuj-adobe.hlx.live/
+- After: https://<branch>--adobe-summit-2024--anuj-adobe.hlx.live/

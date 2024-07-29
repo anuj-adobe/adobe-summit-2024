@@ -55,7 +55,7 @@
             ],
             "color": "rgba(148, 0, 211, 0.3)",
             "mapping": "columns",
-            "customBlockName": "hero-column"
+            "customBlockName": "columns-hero"
           },
           {
             "id": "box-id-635931609",
@@ -109,7 +109,7 @@
             ],
             "color": "rgba(148, 0, 211, 0.2)",
             "mapping": "columns",
-            "customBlockName": "columns-recommendations"
+            "customBlockName": "columns-recommendation"
           },
           {
             "id": "box-id-757763565",

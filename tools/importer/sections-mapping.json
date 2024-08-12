@@ -5,6 +5,17 @@
     "sections": [
       {
         "id": "1-1",
+        "blocks": [],
+        "settings": {}
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "path": "/adobe-summit-2024-account",
+    "sections": [
+      {
+        "id": "2-1",
         "blocks": [
           {
             "id": "box-id-315728138",
@@ -18,21 +29,9 @@
               "numRows": 0
             },
             "color": "rgba(148, 0, 211, 0.3)",
-            "mapping": "header",
+            "mapping": "defaultContent",
             "customBlockName": ""
-          }
-        ],
-        "settings": {}
-      }
-    ]
-  },
-  {
-    "id": "2",
-    "path": "/adobe-summit-2024-account",
-    "sections": [
-      {
-        "id": "2-1",
-        "blocks": [
+          },
           {
             "id": "box-id-315728200",
             "x": 94,
